@@ -21,7 +21,7 @@ body{
     justify-content: space-around;
     align-items: center;
     padding-top:30px;
-    border: 2px solid greenyellow;
+    padding-bottom: 30px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -63,5 +63,66 @@ body{
     }
     .logo{
         margin-bottom: 20px;
+    }
+}
+/* Style for banner section */
+banner h4{
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+banner h1{
+font-size: 4rem;
+font-weight: 800;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+banner li{
+    list-style:disc;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #534C64;  
+}
+.banner{
+    display: flex;
+    gap:3rem;
+    align-items: center;
+   
+} 
+.banner_desc{
+  padding:138px 100px ;
+  background-color: rgba(140, 87, 238, 0.03);
+}
+.banner_image img{
+    width: 50vw;
+
+}
+/* doing responsive */
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column-reverse
+
+    }
+    banner h4{
+        font-size: 2rem;
+    }
+    .banner_desc{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: rgba(140, 87, 238, 0.03);
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner_desc{
+        padding-top: 30px;
+        background-color: rgba(140, 87, 238, 0.03);
+        padding-bottom: 40px;
     }
 }
