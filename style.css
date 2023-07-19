@@ -40,9 +40,9 @@ body{
 }
 .logo{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    gap: 7px;
+    gap: 11px;
 }
 .logo>h3{
     font-size: 2.5rem;
@@ -300,15 +300,19 @@ padding-bottom: 0.5rem;
     width: 100%;
     margin: 0;
     padding-left: 20px;
+    
+    height: 400px;
    
 }
 ._main{
     width: 75%;
     text-align: right;
     margin-left: 50px;   
+    
 }
 .extra{
    left: 2px;
+
 }
 .text{
     text-align: center;
@@ -328,7 +332,7 @@ padding-bottom: 0.5rem;
     }
     .text{
         text-align: center;
-      border: 2px solid tomato;
+     
       margin-bottom: 30px;
       margin-left: auto;
       margin-right: auto;
@@ -349,6 +353,7 @@ padding-bottom: 0.5rem;
     width: 100%;
     margin: 0;
     text-align: center;
+    height:570px ;
     
     
 }
@@ -366,7 +371,7 @@ padding-bottom: 0.5rem;
  grid-template-columns: repeat(5,1fr);
  grid-template-rows: repeat(2,1fr);
  
-    padding: 20px 90px;
+    padding: 77px 90px;
     grid-row-gap:20px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     
@@ -423,3 +428,163 @@ padding-bottom: 0.5rem;
     font-size: 10px;
  }
 }
+/*  */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .types{
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 0;
+        grid-row-gap:20px;
+        grid-column-gap: 20px; 
+    }
+   
+ .grid img{
+    width: 50px;
+
+ }
+
+ 
+ .grid{
+    width: 100%;
+    border: 2px solid gray;
+    gap:10px;
+    border-radius: 20px;
+  
+ }
+ .size{
+    font-size: 14px;
+ } 
+ .types div:nth-child(6),.types div:nth-child(7),.types div:nth-child(8),.types div:nth-child(9){
+    margin-left: auto;
+   margin-right:auto; 
+}
+}
+/*  */
+/* Style for footer */
+/*  */
+.footer{
+    background: #0B0223;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:99px ;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    width:60% ;
+    margin-top: 27px;
+}
+.info p{
+    font-size:0.9rem ;
+    font-weight: 600;
+    color:#FFF ;
+}
+.footer_icon{
+    margin-top: 41px;
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .fa:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    
+}
+.footer .fa{
+    padding: 15px;
+  font-size: 21px;
+  width: 37px;
+  text-align: center;
+  border-radius: 30%;
+}
+.footer .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.footer .fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+.footer .fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.terms{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+.terms p,.copyright p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+}
+.copyright{
+    display: flex;
+    width: 33%;
+}
+/* Doing responsive */
+@media screen and (max-width:576px) {
+    .footer{
+        padding: 59px 55px;
+    }
+    .info{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      width: 100%;
+      grid-row-gap:21px;
+      margin-left: 50px;
+      margin-bottom: 33px;
+    }
+    .footer_icon{
+        width: 67%;
+       margin-bottom: 33px;
+    }
+    .terms{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        grid-row-gap:22px;
+        margin-left: 85px;
+        margin-top: 33px;
+    }
+    .terms p,.copyright p{
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.60);
+        font-weight: 500;
+    
+}
+.info p{
+    font-size: 0.8rem;
+}
+.copyright{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+/*  */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .info{
+        width: 100%;
+        margin-top: 33px;
+        margin-bottom: 27px;
+    }
+    .terms{
+        width: 80%;
+        margin-top: 47px;
+    }
+    .copyright{
+        width: 60%;
+    }
+}
+/* ...................... */
+/* And my codes die here ;p */
+/* ...................... */
+
+
+
