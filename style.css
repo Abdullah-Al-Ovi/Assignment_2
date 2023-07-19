@@ -294,12 +294,13 @@ padding-bottom: 0.5rem;
        flex-direction: column;
         padding:30px ;
         margin-top: 40px;
+        margin-bottom: 0;
 }
 .play_now_image{
     width: 100%;
     margin: 0;
-    
     padding-left: 20px;
+   
 }
 ._main{
     width: 75%;
@@ -361,14 +362,13 @@ padding-bottom: 0.5rem;
 /*  */
 .types {
     display: grid;
-   /* grid-template: repeat(2,1fr) / repeat(5,1fr);
-   /* grid-gap:auto; */
- /* grid-column: auto; */
+   
  grid-template-columns: repeat(5,1fr);
  grid-template-rows: repeat(2,1fr);
  
     padding: 20px 90px;
     grid-row-gap:20px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     
 
 } 
@@ -393,4 +393,33 @@ padding-bottom: 0.5rem;
     color: #FF42A5;
     cursor: pointer;    
 }
+/* doing responsive */
 
+@media screen and (max-width:576px) {
+    .types{
+        grid-template-columns: repeat(3,130px);
+      padding-left: 5px;
+        grid-row-gap:20px;
+        grid-column-gap: 2px;
+        margin-top: 0;
+        
+    }
+    .types div:nth-child(6),.types div:nth-child(7),.types div:nth-child(8),.types div:nth-child(9){
+        margin-left: 10px;
+       margin-right:10px ; 
+}
+ .grid img{
+    width: 25px;
+ }
+ .grid div{
+    font-size: 10px;
+ }
+ .grid{
+    width: 100%;
+    
+    gap:5px;
+ }
+ .size{
+    font-size: 10px;
+ }
+}
